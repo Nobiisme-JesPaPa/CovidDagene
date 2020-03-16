@@ -1,0 +1,9 @@
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\bin\Debug\FormsLomme.exe.config
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\bin\Debug\FormsLomme.exe
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\bin\Debug\FormsLomme.pdb
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\obj\Debug\FormsLomme.csprojAssemblyReference.cache
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\obj\Debug\FormsLomme.Properties.Resources.resources
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\obj\Debug\FormsLomme.csproj.GenerateResource.cache
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\obj\Debug\FormsLomme.exe
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\obj\Debug\FormsLomme.pdb
+C:\Users\45219\Desktop\GitHub\CovidDagene\FormsLomme\obj\Debug\FormsLomme.Calculator.resources
