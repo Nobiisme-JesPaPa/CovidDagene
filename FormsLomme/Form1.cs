@@ -12,11 +12,17 @@ namespace FormsLomme
 {
     public partial class Calculator : Form
     {
+        Double value = 0;
+        string operation = "";
         public Calculator()
         {
             InitializeComponent();
         }
 
+
+        //
+        //Numrene på lommeregneren
+        //
         private void ButtonOne_Click(object sender, EventArgs e)
         {
             Result.Text += "1";
@@ -61,25 +67,19 @@ namespace FormsLomme
         {
             Result.Text += "9";
         }
-
-        private void ButtonPlus_Click(object sender, EventArgs e)
+        private void ButtonClear_Click(object sender, EventArgs e)
         {
-            Result.Text += "+";
+            Result.Text = "";
         }
 
-        private void ButtonMinus_Click(object sender, EventArgs e)
+        //
+        // Opperator knapperne
+        //
+        private void Operator_Click(object sender, EventArgs e)
         {
-            Result.Text += "-";
-        }
-
-        private void ButtonTimes_Click(object sender, EventArgs e)
-        {
-            Result.Text += "X";
-        }
-
-        private void ButtonDiv_Click(object sender, EventArgs e)
-        {
-            Result.Text += "/";
+            Button b = (Button)sender;
+            operation = b.Text;
+            value = Double.Parse(Result.Text);
         }
     }
 }
