@@ -14,6 +14,7 @@ namespace FormsLomme
     {
         Double value = 0;
         string operation = "";
+        bool operation_pressed = false;
         public Calculator()
         {
             InitializeComponent();
@@ -67,6 +68,10 @@ namespace FormsLomme
         {
             Result.Text += "9";
         }
+
+        //
+        // Button Clear
+        //
         private void ButtonClear_Click(object sender, EventArgs e)
         {
             Result.Text = "";
@@ -80,6 +85,7 @@ namespace FormsLomme
             Button b = (Button)sender;
             operation = b.Text;
             value = Double.Parse(Result.Text);
+            operation_pressed = true;
         }
     }
 }
