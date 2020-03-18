@@ -87,5 +87,32 @@ namespace FormsLomme
             value = Double.Parse(Result.Text);
             operation_pressed = true;
         }
+
+        private void ButtonEaq_Click(object sender, EventArgs e)
+        {
+            switch(operation)
+            {
+                case "+":
+                   
+                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    break;
+                       
+
+                case "-":
+                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    break;
+
+                case "*":
+                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    break;
+
+                case "/":
+                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
+            operation_pressed = false;
+        }
     }
 }

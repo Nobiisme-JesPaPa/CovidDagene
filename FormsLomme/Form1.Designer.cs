@@ -165,6 +165,7 @@
             this.ButtonEaq.TabIndex = 10;
             this.ButtonEaq.Text = "=";
             this.ButtonEaq.UseVisualStyleBackColor = true;
+            this.ButtonEaq.Click += new System.EventHandler(this.ButtonEaq_Click);
             // 
             // ButtonPlus
             // 
