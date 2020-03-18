@@ -56,6 +56,7 @@
             this.ButtonZero.TabIndex = 0;
             this.ButtonZero.Text = "0";
             this.ButtonZero.UseVisualStyleBackColor = true;
+            this.ButtonZero.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonTwo
             // 
@@ -66,7 +67,7 @@
             this.ButtonTwo.TabIndex = 1;
             this.ButtonTwo.Text = "2";
             this.ButtonTwo.UseVisualStyleBackColor = true;
-            this.ButtonTwo.Click += new System.EventHandler(this.ButtonTwo_Click);
+            this.ButtonTwo.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonOne
             // 
@@ -77,7 +78,7 @@
             this.ButtonOne.TabIndex = 2;
             this.ButtonOne.Text = "1";
             this.ButtonOne.UseVisualStyleBackColor = true;
-            this.ButtonOne.Click += new System.EventHandler(this.ButtonOne_Click);
+            this.ButtonOne.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonThree
             // 
@@ -88,7 +89,7 @@
             this.ButtonThree.TabIndex = 3;
             this.ButtonThree.Text = "3";
             this.ButtonThree.UseVisualStyleBackColor = true;
-            this.ButtonThree.Click += new System.EventHandler(this.ButtonThree_Click);
+            this.ButtonThree.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonFour
             // 
@@ -99,7 +100,7 @@
             this.ButtonFour.TabIndex = 4;
             this.ButtonFour.Text = "4";
             this.ButtonFour.UseVisualStyleBackColor = true;
-            this.ButtonFour.Click += new System.EventHandler(this.ButtonFour_Click);
+            this.ButtonFour.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonFive
             // 
@@ -110,7 +111,7 @@
             this.ButtonFive.TabIndex = 5;
             this.ButtonFive.Text = "5";
             this.ButtonFive.UseVisualStyleBackColor = true;
-            this.ButtonFive.Click += new System.EventHandler(this.ButtonFive_Click);
+            this.ButtonFive.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonSix
             // 
@@ -121,7 +122,7 @@
             this.ButtonSix.TabIndex = 6;
             this.ButtonSix.Text = "6";
             this.ButtonSix.UseVisualStyleBackColor = true;
-            this.ButtonSix.Click += new System.EventHandler(this.ButtonSix_Click);
+            this.ButtonSix.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonSeven
             // 
@@ -132,7 +133,7 @@
             this.ButtonSeven.TabIndex = 7;
             this.ButtonSeven.Text = "7";
             this.ButtonSeven.UseVisualStyleBackColor = true;
-            this.ButtonSeven.Click += new System.EventHandler(this.ButtonSeven_Click);
+            this.ButtonSeven.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonEIght
             // 
@@ -143,7 +144,7 @@
             this.ButtonEIght.TabIndex = 8;
             this.ButtonEIght.Text = "8";
             this.ButtonEIght.UseVisualStyleBackColor = true;
-            this.ButtonEIght.Click += new System.EventHandler(this.ButtonEIght_Click);
+            this.ButtonEIght.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonNine
             // 
@@ -154,7 +155,7 @@
             this.ButtonNine.TabIndex = 9;
             this.ButtonNine.Text = "9";
             this.ButtonNine.UseVisualStyleBackColor = true;
-            this.ButtonNine.Click += new System.EventHandler(this.ButtonNine_Click);
+            this.ButtonNine.Click += new System.EventHandler(this.Button_Click);
             // 
             // ButtonEaq
             // 
@@ -219,6 +220,7 @@
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(394, 52);
             this.Result.TabIndex = 15;
+            this.Result.Text = "0";
             this.Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ButtonDiv

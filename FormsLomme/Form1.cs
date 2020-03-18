@@ -14,7 +14,7 @@ namespace FormsLomme
     {
         Double value = 0;
         string operation = "";
-        bool operation_pressed = false;
+        bool operation_presed = false;
         public Calculator()
         {
             InitializeComponent();
@@ -24,57 +24,20 @@ namespace FormsLomme
         //
         //Numrene på lommeregneren
         //
-        private void ButtonOne_Click(object sender, EventArgs e)
+            private void Button_Click(object sender, EventArgs e)
         {
-            Result.Text += "1";
-        }
+            if ((Result.Text == "0") || (operation_presed))
+                Result.Clear();
 
-        private void ButtonTwo_Click(object sender, EventArgs e)
-        {
-            Result.Text += "2";
+            Button b = (Button)sender;
+            Result.Text = Result.Text + b.Text;
         }
-
-        private void ButtonThree_Click(object sender, EventArgs e)
-        {
-            Result.Text += "3";
-        }
-
-        private void ButtonFour_Click(object sender, EventArgs e)
-        {
-            Result.Text += "4";
-        }
-
-        private void ButtonFive_Click(object sender, EventArgs e)
-        {
-            Result.Text += "5";
-        }
-
-        private void ButtonSix_Click(object sender, EventArgs e)
-        {
-            Result.Text += "6";
-        }
-
-        private void ButtonSeven_Click(object sender, EventArgs e)
-        {
-            Result.Text += "7";
-        }
-
-        private void ButtonEIght_Click(object sender, EventArgs e)
-        {
-            Result.Text += "8";
-        }
-
-        private void ButtonNine_Click(object sender, EventArgs e)
-        {
-            Result.Text += "9";
-        }
-
         //
         // Button Clear
         //
         private void ButtonClear_Click(object sender, EventArgs e)
         {
-            Result.Text = "";
+            Result.Text = "0";
         }
 
         //
@@ -85,7 +48,7 @@ namespace FormsLomme
             Button b = (Button)sender;
             operation = b.Text;
             value = Double.Parse(Result.Text);
-            operation_pressed = true;
+            operation_presed = true;
         }
 
         private void ButtonEaq_Click(object sender, EventArgs e)
@@ -112,7 +75,9 @@ namespace FormsLomme
                 default:
                     break;
             }
-            operation_pressed = false;
+            operation_presed = false;
         }
+
+    
     }
 }
