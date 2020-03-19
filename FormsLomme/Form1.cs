@@ -51,6 +51,9 @@ namespace FormsLomme
             operation_presed = true;
         }
 
+        //
+        //Selve udregningen
+        //
         private void ButtonEaq_Click(object sender, EventArgs e)
         {
             switch(operation)
@@ -62,20 +65,21 @@ namespace FormsLomme
                        
 
                 case "-":
-                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    Result.Text = (value - double.Parse(Result.Text)).ToString();
                     break;
 
                 case "*":
-                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    Result.Text = (value * double.Parse(Result.Text)).ToString();
                     break;
 
                 case "/":
-                    Result.Text = (value + double.Parse(Result.Text)).ToString();
+                    Result.Text = (value / double.Parse(Result.Text)).ToString();
                     break;
                 default:
                     break;
             }
             operation_presed = false;
+            value = 0;
         }
 
     

@@ -197,7 +197,7 @@
             this.ButtonTimes.Name = "ButtonTimes";
             this.ButtonTimes.Size = new System.Drawing.Size(94, 94);
             this.ButtonTimes.TabIndex = 13;
-            this.ButtonTimes.Text = "x";
+            this.ButtonTimes.Text = "*";
             this.ButtonTimes.UseVisualStyleBackColor = true;
             this.ButtonTimes.Click += new System.EventHandler(this.Operator_Click);
             // 
