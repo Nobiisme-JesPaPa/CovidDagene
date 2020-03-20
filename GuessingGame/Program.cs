@@ -17,7 +17,22 @@ namespace GuessingGame
             Console.WriteLine("Gæt et nummer imellem 1-10");
             while (!run && !OutOfGuesses)
             {
-
+                try
+                {
+                    Console.WriteLine("Guess the number: ");
+                    guess = Convert.ToInt32(Console.ReadLine());
+                    if (guessCount < guessLimit)
+                    {
+                        if (guess == number)
+                        {
+                            Console.WriteLine("Congrats you guessed it!!!");
+                            run = true;
+                        }
+                        else if (guess > number)
+                        {
+                            Console.WriteLine("Number chosen is too high");
+                            guessCount++;
+                        }
             }
         }
     }
