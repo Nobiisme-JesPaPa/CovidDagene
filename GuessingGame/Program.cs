@@ -32,7 +32,17 @@ namespace GuessingGame
                         {
                             Console.WriteLine("Number chosen is too high");
                             guessCount++;
-                        }
+                       }
+                    }
+                    else
+                    {
+                        OutOfGuesses = true;
+                    }
+                }
+                catch(FormatException fEx)
+                {
+                    Console.WriteLine("Wrong input");
+                }
             }
         }
     }
