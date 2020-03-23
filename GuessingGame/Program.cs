@@ -19,18 +19,18 @@ namespace GuessingGame
             {
                 try
                 {
-                    Console.WriteLine("Guess the number: ");
+                    Console.WriteLine("Gæt et nummer: ");
                     guess = Convert.ToInt32(Console.ReadLine());
                     if (guessCount < guessLimit)
                     {
                         if (guess == number)
                         {
-                            Console.WriteLine("Congrats you guessed it!!!");
+                            Console.WriteLine("Sygt, du er dygtig");
                             run = true;
                         }
                         else if (guess > number)
                         {
-                            Console.WriteLine("Number chosen is too high");
+                            Console.WriteLine("Too high");
                             guessCount++;
                        }
                     }
@@ -41,7 +41,7 @@ namespace GuessingGame
                 }
                 catch(FormatException fEx)
                 {
-                    Console.WriteLine("Wrong input");
+                    Console.WriteLine("Forkert");
                 }
             }
         }

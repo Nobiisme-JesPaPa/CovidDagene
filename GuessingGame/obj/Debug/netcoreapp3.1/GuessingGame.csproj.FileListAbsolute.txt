@@ -1,0 +1,3 @@
+C:\Users\45219\Desktop\GitHub\CovidDagene\GuessingGame\obj\Debug\netcoreapp3.1\GuessingGame.csprojAssemblyReference.cache
+C:\Users\45219\Desktop\GitHub\CovidDagene\GuessingGame\obj\Debug\netcoreapp3.1\GuessingGame.AssemblyInfoInputs.cache
+C:\Users\45219\Desktop\GitHub\CovidDagene\GuessingGame\obj\Debug\netcoreapp3.1\GuessingGame.AssemblyInfo.cs
