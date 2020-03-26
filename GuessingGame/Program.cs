@@ -21,7 +21,7 @@ namespace GuessingGame
                 {
                     Console.WriteLine("Gæt et nummer: ");
                     guess = Convert.ToInt32(Console.ReadLine());
-                    if (guessCount < guessLimit)
+                    if (guessCounter < guessLimit)
                     {
                         if (guess == number)
                         {
@@ -31,7 +31,7 @@ namespace GuessingGame
                         else if (guess > number)
                         {
                             Console.WriteLine("Too high");
-                            guessCount++;
+                            guessCounter++;
                        }
                     }
                     else

@@ -100,7 +100,6 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="HTML\Fodbold.html" />
     <Content Include="HTML\Om Mig.html" />
     <Content Include="HTML\Secend side.html" />
     <Content Include="HTML\Third side.html" />
