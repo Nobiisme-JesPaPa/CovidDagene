@@ -1,0 +1,9 @@
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\bin\Debug\MaMaMiaPizzaria.exe.config
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\bin\Debug\MaMaMiaPizzaria.exe
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\bin\Debug\MaMaMiaPizzaria.pdb
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.csprojAssemblyReference.cache
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.Form1.resources
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.Properties.Resources.resources
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.csproj.GenerateResource.cache
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.exe
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.pdb
