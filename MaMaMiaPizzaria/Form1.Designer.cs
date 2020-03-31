@@ -1,6 +1,6 @@
 ﻿namespace MaMaMiaPizzaria
 {
-    partial class Form1
+    partial class MainPizza
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,8 @@
             this.Stor2 = new System.Windows.Forms.CheckBox();
             this.Medium3 = new System.Windows.Forms.CheckBox();
             this.Stor3 = new System.Windows.Forms.CheckBox();
+            this.Pizza4 = new System.Windows.Forms.Label();
+            this.BygSelf = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // KøbNu
@@ -100,7 +102,7 @@
             this.Ingr1.AutoSize = true;
             this.Ingr1.Location = new System.Drawing.Point(33, 50);
             this.Ingr1.Name = "Ingr1";
-            this.Ingr1.Size = new System.Drawing.Size(378, 21);
+            this.Ingr1.Size = new System.Drawing.Size(302, 17);
             this.Ingr1.TabIndex = 5;
             this.Ingr1.Text = "TomatSauce, Ost, Kylling, Løg og Champignon";
             // 
@@ -119,7 +121,7 @@
             this.Ingr2.AutoSize = true;
             this.Ingr2.Location = new System.Drawing.Point(33, 98);
             this.Ingr2.Name = "Ingr2";
-            this.Ingr2.Size = new System.Drawing.Size(475, 21);
+            this.Ingr2.Size = new System.Drawing.Size(380, 17);
             this.Ingr2.TabIndex = 7;
             this.Ingr2.Text = "TomatSauce, Ost, Kebab, Salat, Agurk, Tomat og Dressing";
             // 
@@ -138,7 +140,7 @@
             this.Ingr3.AutoSize = true;
             this.Ingr3.Location = new System.Drawing.Point(33, 151);
             this.Ingr3.Name = "Ingr3";
-            this.Ingr3.Size = new System.Drawing.Size(300, 21);
+            this.Ingr3.Size = new System.Drawing.Size(240, 17);
             this.Ingr3.TabIndex = 9;
             this.Ingr3.Text = "TomatSauce, Ost, Skinke og Ananas";
             // 
@@ -167,7 +169,7 @@
             this.Medium1.AutoSize = true;
             this.Medium1.Location = new System.Drawing.Point(532, 27);
             this.Medium1.Name = "Medium1";
-            this.Medium1.Size = new System.Drawing.Size(69, 26);
+            this.Medium1.Size = new System.Drawing.Size(55, 21);
             this.Medium1.TabIndex = 12;
             this.Medium1.Text = "49,-";
             this.Medium1.UseVisualStyleBackColor = true;
@@ -177,7 +179,7 @@
             this.Stor1.AutoSize = true;
             this.Stor1.Location = new System.Drawing.Point(672, 24);
             this.Stor1.Name = "Stor1";
-            this.Stor1.Size = new System.Drawing.Size(69, 26);
+            this.Stor1.Size = new System.Drawing.Size(55, 21);
             this.Stor1.TabIndex = 13;
             this.Stor1.Text = "69,-";
             this.Stor1.UseVisualStyleBackColor = true;
@@ -187,7 +189,7 @@
             this.Medium2.AutoSize = true;
             this.Medium2.Location = new System.Drawing.Point(532, 77);
             this.Medium2.Name = "Medium2";
-            this.Medium2.Size = new System.Drawing.Size(69, 26);
+            this.Medium2.Size = new System.Drawing.Size(55, 21);
             this.Medium2.TabIndex = 14;
             this.Medium2.Text = "49,-";
             this.Medium2.UseVisualStyleBackColor = true;
@@ -197,7 +199,7 @@
             this.Stor2.AutoSize = true;
             this.Stor2.Location = new System.Drawing.Point(672, 77);
             this.Stor2.Name = "Stor2";
-            this.Stor2.Size = new System.Drawing.Size(69, 26);
+            this.Stor2.Size = new System.Drawing.Size(55, 21);
             this.Stor2.TabIndex = 15;
             this.Stor2.Text = "69,-";
             this.Stor2.UseVisualStyleBackColor = true;
@@ -205,29 +207,53 @@
             // Medium3
             // 
             this.Medium3.AutoSize = true;
-            this.Medium3.Location = new System.Drawing.Point(532, 133);
+            this.Medium3.Location = new System.Drawing.Point(532, 130);
             this.Medium3.Name = "Medium3";
-            this.Medium3.Size = new System.Drawing.Size(69, 26);
+            this.Medium3.Size = new System.Drawing.Size(55, 21);
             this.Medium3.TabIndex = 16;
             this.Medium3.Text = "39,-";
             this.Medium3.UseVisualStyleBackColor = true;
+            this.Medium3.CheckedChanged += new System.EventHandler(this.Medium3_CheckedChanged);
             // 
             // Stor3
             // 
             this.Stor3.AutoSize = true;
             this.Stor3.Location = new System.Drawing.Point(672, 133);
             this.Stor3.Name = "Stor3";
-            this.Stor3.Size = new System.Drawing.Size(69, 26);
+            this.Stor3.Size = new System.Drawing.Size(55, 21);
             this.Stor3.TabIndex = 17;
             this.Stor3.Text = "59,-";
             this.Stor3.UseVisualStyleBackColor = true;
             this.Stor3.CheckedChanged += new System.EventHandler(this.Stor3_CheckedChanged);
             // 
-            // Form1
+            // Pizza4
+            // 
+            this.Pizza4.AutoSize = true;
+            this.Pizza4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pizza4.Location = new System.Drawing.Point(32, 182);
+            this.Pizza4.Name = "Pizza4";
+            this.Pizza4.Size = new System.Drawing.Size(209, 25);
+            this.Pizza4.TabIndex = 18;
+            this.Pizza4.Text = "4. Byg Self Corona";
+            // 
+            // BygSelf
+            // 
+            this.BygSelf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BygSelf.Location = new System.Drawing.Point(532, 170);
+            this.BygSelf.Name = "BygSelf";
+            this.BygSelf.Size = new System.Drawing.Size(195, 75);
+            this.BygSelf.TabIndex = 19;
+            this.BygSelf.Text = " Klik Her For At Starte";
+            this.BygSelf.UseVisualStyleBackColor = true;
+            this.BygSelf.Click += new System.EventHandler(this.BygSelf_Click);
+            // 
+            // MainPizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 450);
+            this.Controls.Add(this.BygSelf);
+            this.Controls.Add(this.Pizza4);
             this.Controls.Add(this.Stor3);
             this.Controls.Add(this.Medium3);
             this.Controls.Add(this.Stor2);
@@ -246,7 +272,7 @@
             this.Controls.Add(this.BestillingPris);
             this.Controls.Add(this.Bestilling);
             this.Controls.Add(this.KøbNu);
-            this.Name = "Form1";
+            this.Name = "MainPizza";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +298,8 @@
         private System.Windows.Forms.CheckBox Stor2;
         private System.Windows.Forms.CheckBox Medium3;
         private System.Windows.Forms.CheckBox Stor3;
+        private System.Windows.Forms.Label Pizza4;
+        private System.Windows.Forms.Button BygSelf;
     }
 }
 
