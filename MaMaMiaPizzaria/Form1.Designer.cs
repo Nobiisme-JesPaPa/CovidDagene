@@ -40,11 +40,11 @@
             this.Ingr3 = new System.Windows.Forms.Label();
             this.Medium = new System.Windows.Forms.Label();
             this.Stor = new System.Windows.Forms.Label();
-            this.Medium1 = new System.Windows.Forms.CheckBox();
+            this.Mellem1 = new System.Windows.Forms.CheckBox();
             this.Stor1 = new System.Windows.Forms.CheckBox();
-            this.Medium2 = new System.Windows.Forms.CheckBox();
+            this.Mellem2 = new System.Windows.Forms.CheckBox();
             this.Stor2 = new System.Windows.Forms.CheckBox();
-            this.Medium3 = new System.Windows.Forms.CheckBox();
+            this.Mellem3 = new System.Windows.Forms.CheckBox();
             this.Stor3 = new System.Windows.Forms.CheckBox();
             this.Pizza4 = new System.Windows.Forms.Label();
             this.BygSelf = new System.Windows.Forms.Button();
@@ -150,9 +150,9 @@
             this.Medium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Medium.Location = new System.Drawing.Point(528, 4);
             this.Medium.Name = "Medium";
-            this.Medium.Size = new System.Drawing.Size(74, 20);
+            this.Medium.Size = new System.Drawing.Size(86, 25);
             this.Medium.TabIndex = 10;
-            this.Medium.Text = "Medium";
+            this.Medium.Text = "Mellem";
             // 
             // Stor
             // 
@@ -164,15 +164,15 @@
             this.Stor.TabIndex = 11;
             this.Stor.Text = "Stor";
             // 
-            // Medium1
+            // Mellem1
             // 
-            this.Medium1.AutoSize = true;
-            this.Medium1.Location = new System.Drawing.Point(532, 27);
-            this.Medium1.Name = "Medium1";
-            this.Medium1.Size = new System.Drawing.Size(55, 21);
-            this.Medium1.TabIndex = 12;
-            this.Medium1.Text = "49,-";
-            this.Medium1.UseVisualStyleBackColor = true;
+            this.Mellem1.AutoSize = true;
+            this.Mellem1.Location = new System.Drawing.Point(532, 27);
+            this.Mellem1.Name = "Mellem1";
+            this.Mellem1.Size = new System.Drawing.Size(55, 21);
+            this.Mellem1.TabIndex = 12;
+            this.Mellem1.Text = "49,-";
+            this.Mellem1.UseVisualStyleBackColor = true;
             // 
             // Stor1
             // 
@@ -184,15 +184,15 @@
             this.Stor1.Text = "69,-";
             this.Stor1.UseVisualStyleBackColor = true;
             // 
-            // Medium2
+            // Mellem2
             // 
-            this.Medium2.AutoSize = true;
-            this.Medium2.Location = new System.Drawing.Point(532, 77);
-            this.Medium2.Name = "Medium2";
-            this.Medium2.Size = new System.Drawing.Size(55, 21);
-            this.Medium2.TabIndex = 14;
-            this.Medium2.Text = "49,-";
-            this.Medium2.UseVisualStyleBackColor = true;
+            this.Mellem2.AutoSize = true;
+            this.Mellem2.Location = new System.Drawing.Point(532, 77);
+            this.Mellem2.Name = "Mellem2";
+            this.Mellem2.Size = new System.Drawing.Size(55, 21);
+            this.Mellem2.TabIndex = 14;
+            this.Mellem2.Text = "49,-";
+            this.Mellem2.UseVisualStyleBackColor = true;
             // 
             // Stor2
             // 
@@ -204,16 +204,16 @@
             this.Stor2.Text = "69,-";
             this.Stor2.UseVisualStyleBackColor = true;
             // 
-            // Medium3
+            // Mellem3
             // 
-            this.Medium3.AutoSize = true;
-            this.Medium3.Location = new System.Drawing.Point(532, 130);
-            this.Medium3.Name = "Medium3";
-            this.Medium3.Size = new System.Drawing.Size(55, 21);
-            this.Medium3.TabIndex = 16;
-            this.Medium3.Text = "39,-";
-            this.Medium3.UseVisualStyleBackColor = true;
-            this.Medium3.CheckedChanged += new System.EventHandler(this.Medium3_CheckedChanged);
+            this.Mellem3.AutoSize = true;
+            this.Mellem3.Location = new System.Drawing.Point(532, 130);
+            this.Mellem3.Name = "Mellem3";
+            this.Mellem3.Size = new System.Drawing.Size(55, 21);
+            this.Mellem3.TabIndex = 16;
+            this.Mellem3.Text = "39,-";
+            this.Mellem3.UseVisualStyleBackColor = true;
+            this.Mellem3.CheckedChanged += new System.EventHandler(this.Medium3_CheckedChanged);
             // 
             // Stor3
             // 
@@ -255,11 +255,11 @@
             this.Controls.Add(this.BygSelf);
             this.Controls.Add(this.Pizza4);
             this.Controls.Add(this.Stor3);
-            this.Controls.Add(this.Medium3);
+            this.Controls.Add(this.Mellem3);
             this.Controls.Add(this.Stor2);
-            this.Controls.Add(this.Medium2);
+            this.Controls.Add(this.Mellem2);
             this.Controls.Add(this.Stor1);
-            this.Controls.Add(this.Medium1);
+            this.Controls.Add(this.Mellem1);
             this.Controls.Add(this.Stor);
             this.Controls.Add(this.Medium);
             this.Controls.Add(this.Ingr3);
@@ -273,6 +273,7 @@
             this.Controls.Add(this.Bestilling);
             this.Controls.Add(this.KøbNu);
             this.Name = "MainPizza";
+            this.Text = "MaMaMiaPizzaRia";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,11 +293,11 @@
         private System.Windows.Forms.Label Ingr3;
         private System.Windows.Forms.Label Medium;
         private System.Windows.Forms.Label Stor;
-        private System.Windows.Forms.CheckBox Medium1;
+        private System.Windows.Forms.CheckBox Mellem1;
         private System.Windows.Forms.CheckBox Stor1;
-        private System.Windows.Forms.CheckBox Medium2;
+        private System.Windows.Forms.CheckBox Mellem2;
         private System.Windows.Forms.CheckBox Stor2;
-        private System.Windows.Forms.CheckBox Medium3;
+        private System.Windows.Forms.CheckBox Mellem3;
         private System.Windows.Forms.CheckBox Stor3;
         private System.Windows.Forms.Label Pizza4;
         private System.Windows.Forms.Button BygSelf;

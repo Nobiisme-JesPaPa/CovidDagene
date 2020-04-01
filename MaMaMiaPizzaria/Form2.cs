@@ -19,8 +19,7 @@ namespace MaMaMiaPizzaria
 
         private void PizzaFærdig_Click(object sender, EventArgs e)
         {
-            MainPizza mainP = new MainPizza();
-                this.Show();
+            this.Close();
         }
     }
 }

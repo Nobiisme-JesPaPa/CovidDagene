@@ -43,15 +43,17 @@
             this.FyldOst = new System.Windows.Forms.CheckBox();
             this.FyldSkinke = new System.Windows.Forms.CheckBox();
             this.FyldChokolade = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.PizzaFærdig = new System.Windows.Forms.Button();
+            this.PizzaStørrelse = new System.Windows.Forms.Label();
+            this.PizzaMellem = new System.Windows.Forms.CheckBox();
+            this.PizzaStor = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Dej
             // 
             this.Dej.AutoSize = true;
             this.Dej.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dej.Location = new System.Drawing.Point(60, 39);
+            this.Dej.Location = new System.Drawing.Point(64, 103);
             this.Dej.Name = "Dej";
             this.Dej.Size = new System.Drawing.Size(41, 24);
             this.Dej.TabIndex = 0;
@@ -61,7 +63,7 @@
             // 
             this.Kryderi.AutoSize = true;
             this.Kryderi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Kryderi.Location = new System.Drawing.Point(60, 93);
+            this.Kryderi.Location = new System.Drawing.Point(64, 157);
             this.Kryderi.Name = "Kryderi";
             this.Kryderi.Size = new System.Drawing.Size(95, 24);
             this.Kryderi.TabIndex = 1;
@@ -71,7 +73,7 @@
             // 
             this.Fyld.AutoSize = true;
             this.Fyld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fyld.Location = new System.Drawing.Point(60, 156);
+            this.Fyld.Location = new System.Drawing.Point(64, 220);
             this.Fyld.Name = "Fyld";
             this.Fyld.Size = new System.Drawing.Size(50, 24);
             this.Fyld.TabIndex = 2;
@@ -81,142 +83,133 @@
             // 
             this.LysDej.AutoSize = true;
             this.LysDej.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LysDej.Location = new System.Drawing.Point(313, 39);
+            this.LysDej.Location = new System.Drawing.Point(317, 103);
             this.LysDej.Name = "LysDej";
-            this.LysDej.Size = new System.Drawing.Size(91, 28);
+            this.LysDej.Size = new System.Drawing.Size(133, 28);
             this.LysDej.TabIndex = 3;
-            this.LysDej.Text = "Lys dej";
+            this.LysDej.Text = "Lys dej + 0,-";
             this.LysDej.UseVisualStyleBackColor = true;
             // 
             // KryderiTimian
             // 
             this.KryderiTimian.AutoSize = true;
             this.KryderiTimian.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KryderiTimian.Location = new System.Drawing.Point(313, 93);
+            this.KryderiTimian.Location = new System.Drawing.Point(317, 157);
             this.KryderiTimian.Name = "KryderiTimian";
-            this.KryderiTimian.Size = new System.Drawing.Size(89, 28);
+            this.KryderiTimian.Size = new System.Drawing.Size(131, 28);
             this.KryderiTimian.TabIndex = 4;
-            this.KryderiTimian.Text = "Timian";
+            this.KryderiTimian.Text = "Timian + 2,-";
             this.KryderiTimian.UseVisualStyleBackColor = true;
             // 
             // FyldTomat
             // 
             this.FyldTomat.AutoSize = true;
             this.FyldTomat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FyldTomat.Location = new System.Drawing.Point(313, 156);
+            this.FyldTomat.Location = new System.Drawing.Point(317, 220);
             this.FyldTomat.Name = "FyldTomat";
-            this.FyldTomat.Size = new System.Drawing.Size(144, 28);
+            this.FyldTomat.Size = new System.Drawing.Size(186, 28);
             this.FyldTomat.TabIndex = 5;
-            this.FyldTomat.Text = "Tomat Sauce";
+            this.FyldTomat.Text = "Tomat Sauce + 0,-";
             this.FyldTomat.UseVisualStyleBackColor = true;
             // 
             // GrovDej
             // 
             this.GrovDej.AutoSize = true;
             this.GrovDej.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrovDej.Location = new System.Drawing.Point(487, 39);
+            this.GrovDej.Location = new System.Drawing.Point(510, 103);
             this.GrovDej.Name = "GrovDej";
-            this.GrovDej.Size = new System.Drawing.Size(105, 28);
+            this.GrovDej.Size = new System.Drawing.Size(147, 28);
             this.GrovDej.TabIndex = 6;
-            this.GrovDej.Text = "Grov Dej";
+            this.GrovDej.Text = "Grov Dej + 5,-";
             this.GrovDej.UseVisualStyleBackColor = true;
             // 
             // KryderiOregano
             // 
             this.KryderiOregano.AutoSize = true;
             this.KryderiOregano.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KryderiOregano.Location = new System.Drawing.Point(487, 93);
+            this.KryderiOregano.Location = new System.Drawing.Point(510, 157);
             this.KryderiOregano.Name = "KryderiOregano";
-            this.KryderiOregano.Size = new System.Drawing.Size(107, 28);
+            this.KryderiOregano.Size = new System.Drawing.Size(149, 28);
             this.KryderiOregano.TabIndex = 7;
-            this.KryderiOregano.Text = "Oregano";
+            this.KryderiOregano.Text = "Oregano + 2,-";
             this.KryderiOregano.UseVisualStyleBackColor = true;
             // 
             // IngenDej
             // 
             this.IngenDej.AutoSize = true;
             this.IngenDej.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IngenDej.Location = new System.Drawing.Point(607, 39);
+            this.IngenDej.Location = new System.Drawing.Point(675, 103);
             this.IngenDej.Name = "IngenDej";
-            this.IngenDej.Size = new System.Drawing.Size(113, 28);
+            this.IngenDej.Size = new System.Drawing.Size(165, 28);
             this.IngenDej.TabIndex = 9;
-            this.IngenDej.Text = "Ingen Dej";
+            this.IngenDej.Text = "Ingen Dej + 20,-";
             this.IngenDej.UseVisualStyleBackColor = true;
             // 
             // KryderiKanel
             // 
             this.KryderiKanel.AutoSize = true;
             this.KryderiKanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KryderiKanel.Location = new System.Drawing.Point(607, 93);
+            this.KryderiKanel.Location = new System.Drawing.Point(675, 157);
             this.KryderiKanel.Name = "KryderiKanel";
-            this.KryderiKanel.Size = new System.Drawing.Size(80, 28);
+            this.KryderiKanel.Size = new System.Drawing.Size(132, 28);
             this.KryderiKanel.TabIndex = 10;
-            this.KryderiKanel.Text = "Kanel";
+            this.KryderiKanel.Text = "Kanel + 60,-";
             this.KryderiKanel.UseVisualStyleBackColor = true;
             // 
             // FyldPølser
             // 
             this.FyldPølser.AutoSize = true;
             this.FyldPølser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FyldPølser.Location = new System.Drawing.Point(607, 156);
+            this.FyldPølser.Location = new System.Drawing.Point(675, 220);
             this.FyldPølser.Name = "FyldPølser";
-            this.FyldPølser.Size = new System.Drawing.Size(85, 28);
+            this.FyldPølser.Size = new System.Drawing.Size(127, 28);
             this.FyldPølser.TabIndex = 11;
-            this.FyldPølser.Text = "Pølser";
+            this.FyldPølser.Text = "Pølser + 3,-";
             this.FyldPølser.UseVisualStyleBackColor = true;
             // 
             // FyldPepperoni
             // 
             this.FyldPepperoni.AutoSize = true;
             this.FyldPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FyldPepperoni.Location = new System.Drawing.Point(708, 154);
+            this.FyldPepperoni.Location = new System.Drawing.Point(808, 220);
             this.FyldPepperoni.Name = "FyldPepperoni";
-            this.FyldPepperoni.Size = new System.Drawing.Size(120, 28);
+            this.FyldPepperoni.Size = new System.Drawing.Size(172, 28);
             this.FyldPepperoni.TabIndex = 12;
-            this.FyldPepperoni.Text = "Pepperoni";
+            this.FyldPepperoni.Text = "Pepperoni + 15,-";
             this.FyldPepperoni.UseVisualStyleBackColor = true;
             // 
             // FyldOst
             // 
             this.FyldOst.AutoSize = true;
             this.FyldOst.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FyldOst.Location = new System.Drawing.Point(487, 156);
+            this.FyldOst.Location = new System.Drawing.Point(510, 218);
             this.FyldOst.Name = "FyldOst";
-            this.FyldOst.Size = new System.Drawing.Size(60, 28);
+            this.FyldOst.Size = new System.Drawing.Size(102, 28);
             this.FyldOst.TabIndex = 13;
-            this.FyldOst.Text = "Ost";
+            this.FyldOst.Text = "Ost + 0,-";
             this.FyldOst.UseVisualStyleBackColor = true;
             // 
             // FyldSkinke
             // 
             this.FyldSkinke.AutoSize = true;
             this.FyldSkinke.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FyldSkinke.Location = new System.Drawing.Point(852, 154);
+            this.FyldSkinke.Location = new System.Drawing.Point(986, 220);
             this.FyldSkinke.Name = "FyldSkinke";
-            this.FyldSkinke.Size = new System.Drawing.Size(88, 28);
+            this.FyldSkinke.Size = new System.Drawing.Size(140, 28);
             this.FyldSkinke.TabIndex = 14;
-            this.FyldSkinke.Text = "Skinke";
+            this.FyldSkinke.Text = "Skinke + 15,-";
             this.FyldSkinke.UseVisualStyleBackColor = true;
             // 
             // FyldChokolade
             // 
             this.FyldChokolade.AutoSize = true;
             this.FyldChokolade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FyldChokolade.Location = new System.Drawing.Point(960, 156);
+            this.FyldChokolade.Location = new System.Drawing.Point(1132, 220);
             this.FyldChokolade.Name = "FyldChokolade";
-            this.FyldChokolade.Size = new System.Drawing.Size(123, 28);
+            this.FyldChokolade.Size = new System.Drawing.Size(175, 28);
             this.FyldChokolade.TabIndex = 15;
-            this.FyldChokolade.Text = "Chokolade";
+            this.FyldChokolade.Text = "Chokolade + 90,-";
             this.FyldChokolade.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // PizzaFærdig
             // 
@@ -229,13 +222,47 @@
             this.PizzaFærdig.UseVisualStyleBackColor = true;
             this.PizzaFærdig.Click += new System.EventHandler(this.PizzaFærdig_Click);
             // 
+            // PizzaStørrelse
+            // 
+            this.PizzaStørrelse.AutoSize = true;
+            this.PizzaStørrelse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PizzaStørrelse.Location = new System.Drawing.Point(64, 57);
+            this.PizzaStørrelse.Name = "PizzaStørrelse";
+            this.PizzaStørrelse.Size = new System.Drawing.Size(148, 24);
+            this.PizzaStørrelse.TabIndex = 19;
+            this.PizzaStørrelse.Text = "Pizza Størrelse";
+            // 
+            // PizzaMellem
+            // 
+            this.PizzaMellem.AutoSize = true;
+            this.PizzaMellem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PizzaMellem.Location = new System.Drawing.Point(317, 53);
+            this.PizzaMellem.Name = "PizzaMellem";
+            this.PizzaMellem.Size = new System.Drawing.Size(141, 28);
+            this.PizzaMellem.TabIndex = 20;
+            this.PizzaMellem.Text = "Mellem - 29,-";
+            this.PizzaMellem.UseVisualStyleBackColor = true;
+            // 
+            // PizzaStor
+            // 
+            this.PizzaStor.AutoSize = true;
+            this.PizzaStor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PizzaStor.Location = new System.Drawing.Point(510, 55);
+            this.PizzaStor.Name = "PizzaStor";
+            this.PizzaStor.Size = new System.Drawing.Size(112, 28);
+            this.PizzaStor.TabIndex = 21;
+            this.PizzaStor.Text = "Stor - 39,-";
+            this.PizzaStor.UseVisualStyleBackColor = true;
+            // 
             // BygSelvForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1226, 530);
+            this.ClientSize = new System.Drawing.Size(1387, 530);
+            this.Controls.Add(this.PizzaStor);
+            this.Controls.Add(this.PizzaMellem);
+            this.Controls.Add(this.PizzaStørrelse);
             this.Controls.Add(this.PizzaFærdig);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.FyldChokolade);
             this.Controls.Add(this.FyldSkinke);
             this.Controls.Add(this.FyldOst);
@@ -252,7 +279,7 @@
             this.Controls.Add(this.Kryderi);
             this.Controls.Add(this.Dej);
             this.Name = "BygSelvForm";
-            this.Text = "Form2";
+            this.Text = "Byg Selv Corona";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,7 +302,9 @@
         private System.Windows.Forms.CheckBox FyldOst;
         private System.Windows.Forms.CheckBox FyldSkinke;
         private System.Windows.Forms.CheckBox FyldChokolade;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button PizzaFærdig;
+        private System.Windows.Forms.Label PizzaStørrelse;
+        private System.Windows.Forms.CheckBox PizzaMellem;
+        private System.Windows.Forms.CheckBox PizzaStor;
     }
 }
