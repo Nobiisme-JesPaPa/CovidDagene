@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace MaMaMiaPizzaria
 {
-    public partial class BygSelvForm : Form
+    public partial class Drikkevare : Form
     {
-        public BygSelvForm()
+        public Drikkevare()
         {
             InitializeComponent();
-        }
-
-        private void PizzaFærdig_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void BygSelvForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

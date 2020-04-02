@@ -8,3 +8,4 @@ C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizza
 C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.pdb
 C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.BygSelvForm.resources
 C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.MainPizza.resources
+C:\Users\45219\Desktop\GitHub\CovidDagene\MaMaMiaPizzaria\obj\Debug\MaMaMiaPizzaria.Drikkevare.resources

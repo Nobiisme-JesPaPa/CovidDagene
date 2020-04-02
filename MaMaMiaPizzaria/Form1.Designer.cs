@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.KøbNu = new System.Windows.Forms.Button();
+            this.Vidre = new System.Windows.Forms.Button();
             this.Bestilling = new System.Windows.Forms.Label();
             this.BestillingPris = new System.Windows.Forms.TextBox();
             this.kr = new System.Windows.Forms.Label();
@@ -48,17 +48,22 @@
             this.Stor3 = new System.Windows.Forms.CheckBox();
             this.Pizza4 = new System.Windows.Forms.Label();
             this.BygSelf = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Lille1 = new System.Windows.Forms.CheckBox();
+            this.Lille2 = new System.Windows.Forms.CheckBox();
+            this.Lille3 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // KøbNu
+            // Vidre
             // 
-            this.KøbNu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KøbNu.Location = new System.Drawing.Point(930, 90);
-            this.KøbNu.Name = "KøbNu";
-            this.KøbNu.Size = new System.Drawing.Size(157, 42);
-            this.KøbNu.TabIndex = 0;
-            this.KøbNu.Text = "Køb Nu";
-            this.KøbNu.UseVisualStyleBackColor = true;
+            this.Vidre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vidre.Location = new System.Drawing.Point(930, 90);
+            this.Vidre.Name = "Vidre";
+            this.Vidre.Size = new System.Drawing.Size(157, 42);
+            this.Vidre.TabIndex = 0;
+            this.Vidre.Text = "Gå Vidre";
+            this.Vidre.UseVisualStyleBackColor = true;
+            this.Vidre.Click += new System.EventHandler(this.Vidre_Click);
             // 
             // Bestilling
             // 
@@ -148,9 +153,9 @@
             // 
             this.Medium.AutoSize = true;
             this.Medium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Medium.Location = new System.Drawing.Point(528, 4);
+            this.Medium.Location = new System.Drawing.Point(582, 7);
             this.Medium.Name = "Medium";
-            this.Medium.Size = new System.Drawing.Size(86, 25);
+            this.Medium.Size = new System.Drawing.Size(69, 20);
             this.Medium.TabIndex = 10;
             this.Medium.Text = "Mellem";
             // 
@@ -158,7 +163,7 @@
             // 
             this.Stor.AutoSize = true;
             this.Stor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Stor.Location = new System.Drawing.Point(668, 4);
+            this.Stor.Location = new System.Drawing.Point(722, 7);
             this.Stor.Name = "Stor";
             this.Stor.Size = new System.Drawing.Size(44, 20);
             this.Stor.TabIndex = 11;
@@ -167,7 +172,7 @@
             // Mellem1
             // 
             this.Mellem1.AutoSize = true;
-            this.Mellem1.Location = new System.Drawing.Point(532, 27);
+            this.Mellem1.Location = new System.Drawing.Point(586, 30);
             this.Mellem1.Name = "Mellem1";
             this.Mellem1.Size = new System.Drawing.Size(55, 21);
             this.Mellem1.TabIndex = 12;
@@ -177,7 +182,7 @@
             // Stor1
             // 
             this.Stor1.AutoSize = true;
-            this.Stor1.Location = new System.Drawing.Point(672, 24);
+            this.Stor1.Location = new System.Drawing.Point(726, 27);
             this.Stor1.Name = "Stor1";
             this.Stor1.Size = new System.Drawing.Size(55, 21);
             this.Stor1.TabIndex = 13;
@@ -187,7 +192,7 @@
             // Mellem2
             // 
             this.Mellem2.AutoSize = true;
-            this.Mellem2.Location = new System.Drawing.Point(532, 77);
+            this.Mellem2.Location = new System.Drawing.Point(586, 80);
             this.Mellem2.Name = "Mellem2";
             this.Mellem2.Size = new System.Drawing.Size(55, 21);
             this.Mellem2.TabIndex = 14;
@@ -197,7 +202,7 @@
             // Stor2
             // 
             this.Stor2.AutoSize = true;
-            this.Stor2.Location = new System.Drawing.Point(672, 77);
+            this.Stor2.Location = new System.Drawing.Point(726, 80);
             this.Stor2.Name = "Stor2";
             this.Stor2.Size = new System.Drawing.Size(55, 21);
             this.Stor2.TabIndex = 15;
@@ -207,7 +212,7 @@
             // Mellem3
             // 
             this.Mellem3.AutoSize = true;
-            this.Mellem3.Location = new System.Drawing.Point(532, 130);
+            this.Mellem3.Location = new System.Drawing.Point(586, 133);
             this.Mellem3.Name = "Mellem3";
             this.Mellem3.Size = new System.Drawing.Size(55, 21);
             this.Mellem3.TabIndex = 16;
@@ -218,7 +223,7 @@
             // Stor3
             // 
             this.Stor3.AutoSize = true;
-            this.Stor3.Location = new System.Drawing.Point(672, 133);
+            this.Stor3.Location = new System.Drawing.Point(726, 136);
             this.Stor3.Name = "Stor3";
             this.Stor3.Size = new System.Drawing.Size(55, 21);
             this.Stor3.TabIndex = 17;
@@ -247,11 +252,55 @@
             this.BygSelf.UseVisualStyleBackColor = true;
             this.BygSelf.Click += new System.EventHandler(this.BygSelf_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(466, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 25);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Lille";
+            // 
+            // Lille1
+            // 
+            this.Lille1.AutoSize = true;
+            this.Lille1.Location = new System.Drawing.Point(467, 27);
+            this.Lille1.Name = "Lille1";
+            this.Lille1.Size = new System.Drawing.Size(55, 21);
+            this.Lille1.TabIndex = 21;
+            this.Lille1.Text = "39,-";
+            this.Lille1.UseVisualStyleBackColor = true;
+            // 
+            // Lille2
+            // 
+            this.Lille2.AutoSize = true;
+            this.Lille2.Location = new System.Drawing.Point(467, 80);
+            this.Lille2.Name = "Lille2";
+            this.Lille2.Size = new System.Drawing.Size(55, 21);
+            this.Lille2.TabIndex = 22;
+            this.Lille2.Text = "39,-";
+            this.Lille2.UseVisualStyleBackColor = true;
+            // 
+            // Lille3
+            // 
+            this.Lille3.AutoSize = true;
+            this.Lille3.Location = new System.Drawing.Point(467, 133);
+            this.Lille3.Name = "Lille3";
+            this.Lille3.Size = new System.Drawing.Size(55, 21);
+            this.Lille3.TabIndex = 23;
+            this.Lille3.Text = "29,-";
+            this.Lille3.UseVisualStyleBackColor = true;
+            // 
             // MainPizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1099, 450);
+            this.Controls.Add(this.Lille3);
+            this.Controls.Add(this.Lille2);
+            this.Controls.Add(this.Lille1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BygSelf);
             this.Controls.Add(this.Pizza4);
             this.Controls.Add(this.Stor3);
@@ -271,7 +320,7 @@
             this.Controls.Add(this.kr);
             this.Controls.Add(this.BestillingPris);
             this.Controls.Add(this.Bestilling);
-            this.Controls.Add(this.KøbNu);
+            this.Controls.Add(this.Vidre);
             this.Name = "MainPizza";
             this.Text = "MaMaMiaPizzaRia";
             this.ResumeLayout(false);
@@ -281,7 +330,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button KøbNu;
+        private System.Windows.Forms.Button Vidre;
         private System.Windows.Forms.Label Bestilling;
         private System.Windows.Forms.TextBox BestillingPris;
         private System.Windows.Forms.Label kr;
@@ -301,6 +350,10 @@
         private System.Windows.Forms.CheckBox Stor3;
         private System.Windows.Forms.Label Pizza4;
         private System.Windows.Forms.Button BygSelf;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox Lille1;
+        private System.Windows.Forms.CheckBox Lille2;
+        private System.Windows.Forms.CheckBox Lille3;
     }
 }
 

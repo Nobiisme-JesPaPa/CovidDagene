@@ -32,5 +32,12 @@ namespace MaMaMiaPizzaria
             BygSelvForm bygSelv = new BygSelvForm();
             bygSelv.Show();
         }
+
+        private void Vidre_Click(object sender, EventArgs e)
+        {
+            Drikkevare drikkevare = new Drikkevare();
+            drikkevare.Show();
+            this.Hide();
+        }
     }
 }

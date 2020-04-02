@@ -47,6 +47,7 @@
             this.PizzaStørrelse = new System.Windows.Forms.Label();
             this.PizzaMellem = new System.Windows.Forms.CheckBox();
             this.PizzaStor = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Dej
@@ -236,7 +237,7 @@
             // 
             this.PizzaMellem.AutoSize = true;
             this.PizzaMellem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PizzaMellem.Location = new System.Drawing.Point(317, 53);
+            this.PizzaMellem.Location = new System.Drawing.Point(502, 53);
             this.PizzaMellem.Name = "PizzaMellem";
             this.PizzaMellem.Size = new System.Drawing.Size(141, 28);
             this.PizzaMellem.TabIndex = 20;
@@ -247,18 +248,30 @@
             // 
             this.PizzaStor.AutoSize = true;
             this.PizzaStor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PizzaStor.Location = new System.Drawing.Point(510, 55);
+            this.PizzaStor.Location = new System.Drawing.Point(695, 55);
             this.PizzaStor.Name = "PizzaStor";
             this.PizzaStor.Size = new System.Drawing.Size(112, 28);
             this.PizzaStor.TabIndex = 21;
             this.PizzaStor.Text = "Stor - 39,-";
             this.PizzaStor.UseVisualStyleBackColor = true;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(317, 53);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(141, 28);
+            this.checkBox1.TabIndex = 22;
+            this.checkBox1.Text = "Mellem - 20,-";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // BygSelvForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1387, 530);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.PizzaStor);
             this.Controls.Add(this.PizzaMellem);
             this.Controls.Add(this.PizzaStørrelse);
@@ -280,6 +293,7 @@
             this.Controls.Add(this.Dej);
             this.Name = "BygSelvForm";
             this.Text = "Byg Selv Corona";
+            this.Load += new System.EventHandler(this.BygSelvForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +320,6 @@
         private System.Windows.Forms.Label PizzaStørrelse;
         private System.Windows.Forms.CheckBox PizzaMellem;
         private System.Windows.Forms.CheckBox PizzaStor;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
